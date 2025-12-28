@@ -172,7 +172,7 @@ async def get_token(acc, session):
         if not uid:
             return None
 
-        url = f"https://api-jwt-steel.vercel.app/get?uid={uid}&password={password}"
+        url = f"http://160.250.137.144:5000/get-token?uid={uid}&password={password}"
         async with session.get(url) as response:
             text = await response.text()
 
