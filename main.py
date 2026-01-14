@@ -172,7 +172,7 @@ async def get_token(acc, session):
         if not uid:
             return None
 
-        url = f"https://raihan-access-to-jwt.vercel.app/token?uid={uid}&password={password}"
+        url = f"https://luanori-token-ob52.vercel.app/get_token?uid={uid}&password={password}"
         async with session.get(url) as response:
             text = await response.text()
 
