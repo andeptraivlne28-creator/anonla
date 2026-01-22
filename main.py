@@ -172,7 +172,7 @@ async def get_token(acc, session):
         if not uid:
             return None
 
-        url = f"https://tienich.onrender.com/token?uid={uid}&password={password}"
+        url = f"https://birthdayspecialinfoapi.vercel.app/player-info?uid={uid}&password={password}"
         async with session.get(url) as response:
             text = await response.text()
 
